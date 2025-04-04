@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rsma"
+# Version reflects significant refactoring and focus change
+version = "0.5.0"
+# !!! EDIT AUTHOR INFORMATION BELOW !!!
+authors = [
+  { name="Your Name", email="your.email@example.com" },
+  # Add other authors if applicable
+]
+description = "Research Software Metadata Analyzer focusing on CodeMeta files in GitHub repositories."
+readme = "README.md"
+requires-python = ">=3.9" # Specify the minimum Python version required
+license = { file = "LICENSE" } # Assumes you have a LICENSE file in the root
+keywords = ["research software", "metadata", "codemeta", "github", "analysis", "cli", "schema validation"]
+classifiers = [
+    # See https://pypi.org/classifiers/
+    "Development Status :: 3 - Alpha", # Or 4 - Beta if more stable
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License", # Match the license file
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed", # Indicates the project uses type hints
+]
+dependencies = [
+    "python-dotenv>=1.0.0", # For loading .env configuration files
+    "PyGithub>=2.0.0",      # For interacting with the GitHub API
+    "jsonschema>=4.0.0",    # For validating JSON against a schema
+]
+
+# !!! EDIT PROJECT URLS BELOW !!!
+[project.urls]
+"Homepage" = "https://github.com/your-username/rsma" # Replace with actual URL
+"Repository" = "https://github.com/your-username/rsma" # Replace with actual URL
+"Bug Tracker" = "https://github.com/your-username/rsma/issues" # Replace with actual URL
+
+# Defines the command-line script entry point: `rsma` will run `rsma.cli:main`
+[project.scripts]
+rsma = "rsma.cli:main"
+
+# Defines optional dependencies, e.g., for development
+[project.optional-dependencies]
+dev = [
+    "black",        # Code formatter
+    "flake8",       # Linter
+    "isort",        # Import sorter
+    "mypy",         # Static type checker
+    "pre-commit",   # For managing pre-commit hooks
+    "wheel",        # For building wheel distributions
+    "twine",        # For uploading packages to PyPI
+    # Add 'unittest' or other test runners if not relying solely on built-in
+]
+
+# Ensures the schema file is included when the package is built and installed
+[tool.setuptools.package-data]
+rsma = ["schemas/*.json"]
+
+# --- Tool Configurations (Optional but Recommended) ---
+
+[tool.black]
+line-length = 88
+target-version = ['py39'] # Match requires-python minimum
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.9" # Match requires-python minimum
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true # Add if needed for libraries without stubs
+# Add other mypy settings as desired (e.g., strict = true)
+
+# Add configurations for flake8, pytest, etc. if used

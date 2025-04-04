@@ -1,0 +1,159 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://codemeta.github.io/codemeta-3.0.0.json",
+    "title": "CodeMeta Schema 3.0.0",
+    "description": "Schema for CodeMeta JSON metadata for software projects",
+    "type": "object",
+    "required": ["@context", "@type", "name"],
+    "properties": {
+      "@context": {
+        "type": ["string", "object", "array"],
+        "description": "The JSON-LD context for the document"
+      },
+      "@type": {
+        "type": ["string", "array"],
+        "description": "The type of the software (typically SoftwareSourceCode)"
+      },
+      "name": {
+        "type": "string",
+        "description": "The name of the software"
+      },
+      "identifier": {
+        "type": ["string", "object"],
+        "description": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc."
+      },
+      "description": {
+        "type": "string",
+        "description": "A description of the software"
+      },
+      "codeRepository": {
+        "type": "string",
+        "format": "uri",
+        "description": "A link to the repository where the un-compiled, human readable code and related code is located"
+      },
+      "license": {
+        "type": ["string", "object"],
+        "description": "A license document that applies to this content, typically indicated by URL"
+      },
+      "version": {
+        "type": ["string", "number"],
+        "description": "The version of the software"
+      },
+      "author": {
+        "type": ["array", "object"],
+        "description": "The author(s) of the software",
+        "items": {
+          "type": "object",
+          "properties": {
+            "@type": {
+              "type": "string",
+              "enum": ["Person", "Organization"]
+            },
+            "givenName": {
+              "type": "string"
+            },
+            "familyName": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "affiliation": {
+              "type": ["string", "object"]
+            },
+            "identifier": {
+              "type": ["string", "object"]
+            }
+          }
+        }
+      },
+      "creator": {
+        "type": ["array", "object"],
+        "description": "The creator(s) of the software (alternative to author)",
+        "items": {
+          "type": "object",
+          "properties": {
+            "@type": {
+              "type": "string",
+              "enum": ["Person", "Organization"]
+            }
+          }
+        }
+      },
+      "dateCreated": {
+        "type": "string",
+        "format": "date",
+        "description": "The date on which the software was created"
+      },
+      "datePublished": {
+        "type": "string",
+        "format": "date",
+        "description": "Date of first publication"
+      },
+      "dateModified": {
+        "type": "string",
+        "format": "date",
+        "description": "The date on which the software was most recently modified"
+      },
+      "programmingLanguage": {
+        "type": ["string", "object", "array"],
+        "description": "The programming language(s) used to implement the software"
+      },
+      "operatingSystem": {
+        "type": ["string", "array"],
+        "description": "Operating systems supported"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL of the item"
+      },
+      "contributor": {
+        "type": ["array", "object"],
+        "description": "A secondary contributor to the software"
+      },
+      "maintainer": {
+        "type": ["array", "object"],
+        "description": "Individual responsible for maintaining the software"
+      },
+      "softwareRequirements": {
+        "type": ["string", "array", "object"],
+        "description": "Required software dependencies"
+      },
+      "softwareSuggestions": {
+        "type": ["string", "array", "object"],
+        "description": "Optional dependencies, e.g. for optional features, code development, etc."
+      },
+      "readme": {
+        "type": "string",
+        "format": "uri",
+        "description": "A link to software Readme file"
+      },
+      "issueTracker": {
+        "type": "string",
+        "format": "uri",
+        "description": "A link to software bug reporting or issue tracking system"
+      },
+      "developmentStatus": {
+        "type": "string",
+        "description": "Description of development status, e.g. active, inactive, suspended. See repostatus.org"
+      },
+      "referencePublication": {
+        "type": ["string", "object", "array"],
+        "description": "An academic publication related to the software"
+      },
+      "funding": {
+        "type": ["string", "object", "array"],
+        "description": "Funding source (e.g. specific grant)"
+      },
+      "funder": {
+        "type": ["object", "array"],
+        "description": "A person or organization that supports (sponsors) something through some kind of financial contribution"
+      }
+    },
+    "additionalProperties": true
+  }
