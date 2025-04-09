@@ -1,5 +1,5 @@
 {
-	"@context": {
+    "@context": {
       "@vocab": "https://schema.org/",
       "codemeta": "https://w3id.org/codemeta/3.0"
     },
