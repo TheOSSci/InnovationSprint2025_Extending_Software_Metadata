@@ -1,0 +1,682 @@
+{
+    "@context": {
+      "@vocab": "https://schema.org/",
+      "prov": "http://www.w3.org/ns/prov#",
+      "sosa": "https://w3c.github.io/sdw-sosa-ssn/ssn/#SOSA",
+      "codemeta": "https://github.com/codemeta/codemeta/blob/master/codemeta.jsonld"
+    },
+    "@id": "https://doi.org/10.5281/zenodo.591887",
+    "@type": ["SoftwareSourceCode", "SoftwareApplication"],
+    "applicationCategory": ["visualizations", "coordinates", "data_analysis", "data_retrieval", "image_processing"],
+    "applicationSubCategory": ["2D_graphics", "line_plots", "power_spectra"],
+	"author": {
+        "@list": [
+            {
+                "@id": "https://orcid.org/0000-0003-4217-4642",
+                "@type": "Person",
+                "affiliation": 
+                {
+                	"@type": "Organization",
+                    "name": "Aperio Software Ltd."
+                },
+                "email": "stuart.mumford@aperiosoftware.com",
+                "familyName": "Mumford",
+                "givenName": "Stuart J. ",
+                "identifier": 
+                {
+                    "@id": "https://orcid.org/0000-0003-4217-4642",
+                    "@type": "PropertyValue",
+                    "propertyID": "https://registry.identifiers.org/registry/orcid",
+                    "url": "https://orcid.org/0000-0003-4217-4642",
+                    "value": "orcid:0000-0003-4217-4642"
+                }
+            },
+            {
+                 "@id": "https://orcid.org/0000-0002-6253-082X",
+                 "@type": "Person",
+                 "affiliation": 
+                 {
+                     "@type": "Organization",
+                     "name": "Lockheed Martin Solar and Astrophysics Laboratory & Bay Area Environmental Research Institute"
+                 },
+                 "familyName": "Freij",
+                 "givenName": "Nabil",
+                 "identifier": 
+                 {
+                     "@id": "https://orcid.org/0000-0002-6253-082X",
+                     "@type": "PropertyValue",
+                     "propertyID": "https://registry.identifiers.org/registry/orcid",
+                     "url": "https://orcid.org/0000-0002-6253-082X",
+                     "value": "orcid:0000-0002-6253-082X"
+                 }
+            },
+            {
+                 "@id": "https://orcid.org/0000-0002-1365-1908",
+                 "@type": "Person",
+                 "affiliation": 
+                 {
+                     "@id": "https://ror.org/02jx3x895",
+					 "@type": "Organization",
+                     "address": "Gower St. London WC1E 6BT, United Kingdom",
+                     "name": "University College London",
+                     "identifier": 
+                     {
+                     	"@id": "https://ror.org/02jx3x895",
+                     	"@type": "PropertyValue",
+                     	"propertyID": "https://registry.identifiers.org/registry/ror",
+                     	"url": "https://ror.org/02jx3x895",
+                     	"value": "ror:02jx3x895"
+                 	}
+                 },
+                 "familyName": "Stansby",
+                 "givenName": "David",
+                 "identifier": 
+                 {
+                     "@id": "https://orcid.org/0000-0002-1365-1908",
+                     "@type": "PropertyValue",
+                     "propertyID": "https://registry.identifiers.org/registry/orcid",
+                     "url": "https://orcid.org/0000-0002-1365-1908",
+                     "value": "orcid:0000-0002-1365-1908"
+                 }
+            },
+            {
+                 "@id": "https://orcid.org/0000-0001-6127-795X",
+                 "@type": "Person",
+                 "affiliation": 
+                 {
+                     "@id": "https://ror.org/0171mag52",
+					 "@type": "Organization",
+                     "name": "NASA Goddard Space Flight Center",
+                     "identifier": 
+					{
+                     	"@id": "https://ror.org/0171mag52",
+                     	"@type": "PropertyValue",
+                     	"propertyID": "https://registry.identifiers.org/registry/ror",
+                     	"url": "https://ror.org/0171mag52",
+                     	"value": "ror:0171mag52"
+                 	}
+                 },
+                 "familyName": "Christe",
+                 "givenName": "Steven",
+                 "identifier": 
+                 {
+                     "@id": "https://orcid.org/0000-0001-6127-795X",
+                     "@type": "PropertyValue",
+                     "propertyID": "https://registry.identifiers.org/registry/orcid",
+                     "url": "https://orcid.org/0000-0001-6127-795X",
+                     "value": "orcid:0000-0001-6127-795X"
+                 }
+            },
+            {
+                 "@id": "https://orcid.org/0000-0001-6874-2594",
+                 "@type": "Person",
+                 "affiliation": {
+                     "@id": "https://ror.org/0171mag52",
+					 "@type": "Organization",
+                     "name": "NASA Goddard Space Flight Center",
+					 "identifier": {"@id": "https://ror.org/0171mag52"}                     
+                 },
+                 "familyName": "Shih",
+                 "givenName": "Albert Y.",
+                 "identifier": {
+                    "@id": "https://orcid.org/0000-0001-6874-2594",
+                    "@type": "PropertyValue",
+                    "propertyID": "https://registry.identifiers.org/registry/orcid",
+                    "url": "https://orcid.org/0000-0001-6874-2594",
+                    "value": "orcid:0000-0001-6874-2594"
+                 }
+            }
+        ]
+    },
+    "codemeta:continuousIntegration": "https://github.com/sunpy/sunpy/actions/workflows/ci.yml",
+    "codemeta:embargoEndDate": "2015-06-09",
+    "codemeta:issueTracker": "https://github.com/sunpy/sunpy/issues",
+    "codemeta:softwareSuggestions": "https://sunpy.org/affiliated/",
+    "codeRepository": "https://github.com/sunpy/sunpy",    
+    "contributor": {
+      "@list": [
+         {
+            "@id": "https://credit.niso.org/contributor-roles/funding-acquisition/",
+            "@type": "Role",
+            "roleName": "Funding acquisition",
+            "url": "https://credit.niso.org/contributor-roles/funding-acquisition/",
+            "contributor": {
+               "@id": "https://orcid.org/0000-0001-6399-3351",
+               "@type": "Person",
+               "affiliation": {
+                  "@id": "https://ror.org/036jqmy94",
+                  "@type": "Organization",
+                  "name": "University of Iowa",
+                  "identifier":{
+                     	"@id": "https://ror.org/036jqmy94",
+                     	"@type": "PropertyValue",
+                     	"propertyID": "https://registry.identifiers.org/registry/ror",
+                     	"url": "https://ror.org/036jqmy94",
+                     	"value": "ror:036jqmy94"
+                  }
+               },
+               "familyName": "Pickett",
+               "givenName": "Jolene S.",
+               "name": "Jolene S. Pickett"
+            }
+         },
+         {
+            "@type": "Role",
+            "roleName": "PrincipalInvestigator",
+            "contributor": {"@id": "https://orcid.org/0000-0001-6399-3351"}
+         },
+         {
+            "@type": "Role",
+            "roleName": "ProjectManager",
+            "contributor": {"@id": "https://orcid.org/0000-0001-6399-3351"}         
+         },
+         {
+            "@id": "https://credit.niso.org/contributor-roles/software/",
+            "@type": "Role",
+            "roleName": "software",
+            "url": "https://credit.niso.org/contributor-roles/software/",
+            "contributor": {
+               "@type": "Person",
+               "affiliation": {"@id": "https://ror.org/036jqmy94"},
+               "familyName": "Smith",
+               "givenName": "Jane S.",
+               "name": "Jane S. Smith"
+            }
+         },
+         {
+            "@type": "Role",
+            "roleName": ["Co-Investigator", "Contact"],
+            "contributor": {
+               "@type": "Person",
+               "affiliation": {"@id": "https://ror.org/036jqmy94"},
+               "familyName": "Wind",
+               "givenName": "Gone W.T.",
+               "name": "Gone W.T. Wind"
+            }
+         }
+	]},
+    "copyrightHolder": {
+		"@id": "https://ror.org/04xbq1n92",
+		"@type": "Organization",
+        "name": "Heliophysics Data and Modeling Consortium",
+        "identifier":{
+			"@id": "https://ror.org/04xbq1n92",
+            "@type": "PropertyValue",
+            "propertyID": "https://registry.identifiers.org/registry/ror",
+            "url": "https://ror.org/04xbq1n92",
+            "value": "ror:04xbq1n92"
+        }
+    },
+    "copyrightYear": "2015",
+	"creativeWorkStatus": {
+        "@id": "https://www.repostatus.org/#active",
+        "@type": "DefinedTerm",
+        "name": "Active",
+        "description": "The project has reached a stable, usable state and is being actively developed.",
+        "inDefinedTermSet": "https://www.repostatus.org",
+        "image": "https://www.repostatus.org/badges/latest/active.svg"
+     },        
+    "creditText": ["https://doi.org/10.3847/1538-4357/ab4f7a", "https://doi.org/10.5281/zenodo.14292170"],  
+    "dateCreated": "2015-06-09",
+    "dateModified": "2024-12-07",
+    "datePublished": "2015-06-09",
+    "description": "sunpy is a Python software package that provides fundamental tools for accessing, loading and interacting with solar physics data in Python. It includes an interface for searching and downloading data from multiple data providers, data containers for image and time series data, commonly used solar coordinate frames and associated transformations, as well as other functionality needed for solar data analysis.",
+    "downloadUrl": "https://github.com/sunpy/sunpy",
+    "editor": {"@list": [
+            {
+                "@id": "https://orcid.org/1234-1234-1234-1234",
+                "@type": "Person",
+                "affiliation": 
+                {
+                	"@type": "Organization",
+                    "name": "Example Org name"
+                },
+                "familyName": "Smith",
+                "givenName": "Stuart A.",
+                "identifier": 
+                {
+                    "@id": "https://orcid.org/1234-1234-1234-1234",
+                    "@type": "PropertyValue",
+                    "propertyID": "https://registry.identifiers.org/registry/orcid",
+                    "url": "https://orcid.org/1234-1234-1234-1234",
+                    "value": "orcid:1234-1234-1234-1234"
+                }
+            },
+            {
+                 "@type": "Person",
+                 "affiliation": {"@id": "https://ror.org/04xbq1n92"},
+                 "familyName": "Brown",
+                 "givenName": "Charlie"
+            }
+    ]},
+    "encoding": "https://www.youtube.com/watch?v=bXPPTCkaVu8&pp=ygUFc3VucHk%3D",
+    "fileFormat": {
+    	"@id": "https://www.iana.org/assignments/media-types/application/zip",
+        "@type": "URL"
+    },
+    "fileSize": "4.2 MB",
+	"funding": {
+        "@id": "https://example_link_to_grant_page.html",
+        "@type": "MonetaryGrant",
+        "funder": {
+            "@id": "https://ror.org/004eyxv41",
+            "@type": "Organization",
+            "name": "NumFocus",
+			"identifier":{
+            	"@id": "https://ror.org/004eyxv41",
+                "@type": "PropertyValue",
+                "propertyID": "https://registry.identifiers.org/registry/ror",
+                "url": "https://ror.org/004eyxv41",
+                "value": "ror:004eyxv41"
+            }            
+        },
+        "identifier": "NNG19PQ28C",
+        "name": "SunPy Award",
+        "url": "https://example_link_to_grant_page.html"
+    },    
+    "hasPart": [
+      {
+        "@id": "https://doi.org/10.5281/zenodo.7016783",
+        "@type": "SoftwareSourceCode",
+        "url": "https://doi.org/10.5281/zenodo.7016783",
+		"identifier":{
+            	"@id": "https://doi.org/10.5281/zenodo.7016783",
+                "@type": "PropertyValue",
+                "propertyID": "https://registry.identifiers.org/registry/doi",
+                "url": "https://doi.org/10.5281/zenodo.7016783",
+                "value": "doi:10.5281/zenodo.7016783"
+         }  
+      },
+      {
+        "@id": "https://github.com/jgieseler/solarmach",
+        "@type": "SoftwareSourceCode",
+        "url": "https://github.com/jgieseler/solarmach"
+      }
+    ], 
+    "identifier": {
+    	"@type": "PropertyValue",
+        "@id": "https://doi.org/10.5281/zenodo.14292170",
+        "name": "DOI: 10.5281/zenodo.14292170",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "value": "doi:10.5281/zenodo.14292170",
+        "url": "https://doi.org/10.5281/zenodo.14292170"
+    },
+    "installUrl": "https://github.com/sunpy/sunpy",
+    "isAccessibleForFree": "True",
+    "isPartOf": {
+    	"@id": "https://www.sunpy.org/",
+        "@type": "CreativeWork",
+        "name": "The SunPy Project",
+        "url": "https://www.sunpy.org/"
+    },
+    "image": "https://raw.githubusercontent.com/sunpy/sunpy-logo/master/generated/sunpy_icon.png",
+    "inLanguage": "en",    
+    "keywords":
+    [{
+    	"@id": "http://astrothesaurus.org/uat/1483",
+        "@type": "DefinedTerm",
+        "description": "RelatedPhenomena",
+        "inDefinedTermSet": "http://astrothesaurus.org/uat/",
+        "name": "Solar corona",
+        "termCode": "1483",
+        "identifier": "http://astrothesaurus.org/uat/1483",
+        "url": "http://astrothesaurus.org/uat/1483"
+    },
+    {
+    	"@type": "DefinedTerm",
+        "name": "FITS",
+        "description": "supportedFileFormats"
+     },
+     {
+    	"@type": "DefinedTerm",     
+     	"name": "netCDF3/4",
+        "description": "supportedFileFormats"
+     },
+     {
+    	"@type": "DefinedTerm",     
+     	"name": "coronal mass ejections",
+        "description": "relatedPhenomena"
+     },
+     {
+    	"@type": "DefinedTerm",     
+     	"name": "coronal holes",
+        "description": "relatedPhenomena"
+     },
+     {
+    	"@type": "DefinedTerm",     
+     	"name": "sun"
+     },     
+     {
+    	"@type": "DefinedTerm",     
+     	"name": "solar imagery"
+     },
+     {
+    	"@type": "DefinedTerm",     
+     	"name": "space weather"
+     }     
+     ],
+    "license": "https://spdx.org/licenses/BSD-2-Clause",
+    "maintainer": {"@id": "https://orcid.org/0000-0003-4217-4642"},
+    "memoryRequirements": "unknown",
+	"mentions": [
+      {
+        "@id": "https://hpde.io/SMWG/Instrument/SOHO/LASCO.html",
+        "@type": [
+            "IndividualProduct",
+            "prov:Entity",
+            "sosa:System"
+        ],
+        "description": "relatedInstruments",
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SPASE Resource ID",
+            "value": "spase://SMWG/Instrument/SOHO/LASCO"
+        },
+        "name": "LASCO",
+        "url": "https://hpde.io/SMWG/Instrument/SOHO/LASCO.html"
+      },
+      {
+        "@id": "https://hpde.io/SMWG/Observatory/SOHO.html",
+        "@type": [
+            "ResearchProject",
+            "prov:Entity",
+            "sosa:Platform"
+        ],
+        "description": "relatedObservatories",
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SPASE Resource ID",
+            "value": "spase://SMWG/Observatory/SOHO"
+        },        
+        "name": "SOHO",
+        "url": "https://hpde.io/SMWG/Observatory/SOHO.html"
+      },
+      {
+        "@id": "https://hpde.io/SMWG/Observatory/GOES.html",
+        "@type": [
+            "ResearchProject",
+            "prov:Entity",
+            "sosa:Platform"
+        ],
+        "description": "relatedObservatories",
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SPASE Resource ID",
+            "value": "spase://SMWG/Observatory/GOES"
+        },         
+        "name": "GOES",
+        "url": "https://hpde.io/SMWG/Observatory/GOES.html"
+      },      
+      {
+        "@type": [
+            "ResearchProject",
+            "prov:Entity",
+            "sosa:Platform"
+        ],
+        "description": "relatedObservatories",
+        "name": "Fermi"
+      },
+      {
+        "@id": "http://doi.org/10.3847/1538-4365/ac1f1d",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.3847/1538-4365/ac1f1d"
+      },
+      {
+        "@id": "http://doi.org/10.3847/1538-4357/ac1514",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.3847/1538-4357/ac1514"
+      },
+      {
+        "@id": "http://doi.org/10.3847/1538-4357/ac2664",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.3847/1538-4357/ac2664"
+      },    
+      {
+        "@id": "http://doi.org/10.3847/2041-8213/ac42d0",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.3847/2041-8213/ac42d0"
+      },  
+      {
+        "@id": "http://doi.org/10.1007/s11207-021-01916-z",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.1007/s11207-021-01916-z"
+      },        
+      {
+        "@id": "http://doi.org/10.3847/1538-4357/ab290c",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.3847/1538-4357/ab290c"
+      },        
+      {
+        "@id": "http://doi.org/10.1029/2020AV000214",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.1029/2020AV000214"
+      },       
+      {
+        "@id": "http://doi.org/10.3847/1538-4365/ab4da7",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.3847/1538-4365/ab4da7"
+      },      
+      {
+        "@id": "http://doi.org/10.1051/0004-6361/202038691",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.1051/0004-6361/202038691"
+      },     
+      {
+        "@id": "http://doi.org/10.1093/mnras/staa3198",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.1093/mnras/staa3198"
+      },       
+      {
+        "@id": "http://doi.org/10.1051/0004-6361/202040051",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.1051/0004-6361/202040051"
+      },      
+      {
+        "@id": "http://doi.org/10.1051/0004-6361/202140640",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.1051/0004-6361/202140640"
+      },       
+      {
+        "@id": "http://doi.org/10.1093/mnras/stab2283",
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "url": "http://doi.org/10.1093/mnras/stab2283"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "description": "relatedPublications",
+        "disambiguatingDescription": "Z. S. Hamidi et al. (2019) J. Phys.: Conf. Ser. 1298 012013"
+      },      
+      {
+        "@id": "https://doi.org/10.48322/asmp-nf13",
+        "@type": "Dataset",
+        "description": "relatedDatasets",
+        "url": "https://doi.org/10.48322/asmp-nf13"
+      },     
+      {
+        "@id": "https://doi.org/10.48322/f2z0-rs29",
+        "@type": "Dataset",
+        "description": "relatedDatasets",
+        "url": "https://doi.org/10.48322/f2z0-rs29"
+      },       
+      {
+        "@type": "Dataset",
+        "description": "relatedDatasets",
+        "disambiguatingDescription": "Fuselier et al. (2022). MMS 4 Hot Plasma Composition Analyzer (HPCA) Ions, Level 2 (L2), Burst Mode, 0.625 s Data [Data set]. NASA Space Physics Data Facility."
+      },  
+      {
+        "@id": "https://github.com/pingswept/pysolar",
+        "@type": "SoftwareSourceCode",
+        "description": "relatedSoftware",
+        "url": "https://github.com/pingswept/pysolar"
+      },           
+      {
+        "@id": "https://doi.org/10.21105/joss.05296",
+        "@type": "SoftwareSourceCode",
+        "description": "interoperableSoftware",
+        "url": "https://doi.org/10.21105/joss.05296"
+      },     
+      {
+        "@id": "https://doi.org/10.21105/joss.01614",
+        "@type": "SoftwareSourceCode",
+        "description": "interoperableSoftware",
+        "url": "https://doi.org/10.21105/joss.01614"
+      },        
+      {
+        "@id": "https://doi.org/10.5281/zenodo.2572849",
+        "@type": "SoftwareSourceCode",
+        "description": "interoperableSoftware",
+        "url": "https://doi.org/10.5281/zenodo.2572849"
+      },        
+      {
+        "@id": "https://doi.org/10.5281/zenodo.4016980",
+        "@type": "SoftwareSourceCode",
+        "description": "interoperableSoftware",
+        "url": "https://doi.org/10.5281/zenodo.4016980"
+      },    
+      {
+        "@id": "https://joss.theoj.org/papers/10.21105/joss.02801",
+        "@type": "SoftwareSourceCode",
+        "description": "interoperableSoftware",
+        "url": "https://joss.theoj.org/papers/10.21105/joss.02801"
+      },     
+      {
+        "@id": "https://doi.org/10.5281/zenodo.7016783",
+        "@type": "SoftwareSourceCode",
+        "description": "interoperableSoftware",
+        "url": "https://doi.org/10.5281/zenodo.7016783"
+      },
+      {
+        "@id": "https://github.com/jgieseler/solarmach",
+        "@type": "SoftwareSourceCode",
+        "description": "interoperableSoftware",
+        "url": "https://github.com/jgieseler/solarmach"
+      } 
+    ],    
+    "name": "sunpy: A Core Package for Solar Physics",
+    "operatingSystem": "OS Independent",
+    "permissions": "none",
+    "programmingLanguage": "Python",
+    "processorRequirements": ["Linux x86_64", "Linux aarch64", "Linux ppc64le", "Windows x86_64", "Mac arm64 (Apple Silicon)", "Mac x86_64"],
+    "prov:wasRevisionOf": [
+        {"@id": "https://doi.org/10.5281/zenodo.13948147"},
+        {"@id": "https://doi.org/10.5281/zenodo.13743555"},
+        {"@id": "https://doi.org/10.5281/zenodo.11180141"}
+    ],
+    "provider": {
+    	"@id": "https://github.com/",
+        "@type": "Organization",
+        "name": "GitHub",
+        "url": "https://github.com/"
+    },
+    "publisher": {
+        "@id": "https://zenodo.org/",
+        "@type": "Organization",
+        "name": "Zenodo",
+        "url": "https://zenodo.org/"
+    },
+    "releaseNotes": "sunpy is a software library that provides fundamental tools for accessing, loading and interacting with solar physics data in Python",
+    "review": "https://community.openastronomy.org/c/sunpy/5",
+    "runtimePlatform": ["Python 3.11", "Python 3.12", "Python 3.13"],
+    "spatialCoverage": [
+      {
+         "@type": "Place",
+         "name": "Solar Environment"
+      },
+      {
+         "@type": "Place",
+         "name": "Interplanetary Space"      
+      }],   
+   "sameAs": "http://www.sunpy.org/",   
+   "softwareHelp": {
+   		"@id": "https://openastronomy.element.io/#/room/#sunpy:openastronomy.org",
+        "@type": "CreativeWork",
+        "name": "Chat",
+        "identifier": "https://openastronomy.element.io/#/room/#sunpy:openastronomy.org",
+        "url": "https://openastronomy.element.io/#/room/#sunpy:openastronomy.org"
+   },
+   "softwareRequirements": "https://github.com/sunpy/sunpy/blob/main/pyproject.toml",
+   "softwareVersion": "v6.0.4",
+   "sponsor": {
+   		"@id": "https://ror.org/004eyxv41",
+        "@type": "Organization",
+        "name": "NumFocus",
+		"identifier":{
+        	"@id": "https://ror.org/004eyxv41",
+            "@type": "PropertyValue",
+            "propertyID": "https://registry.identifiers.org/registry/ror",
+            "url": "https://ror.org/004eyxv41",
+            "value": "ror:004eyxv41"
+        }            
+   },
+   "storageRequirements": "unknown",
+   "subjectOf": [
+   {
+      "@type": "DataDownload",
+      "contentUrl": "https://drive.google.com/file/d/1SzwlpPc2za-eT6LC_ENgsBlfXwA1IgDJ/view?usp=drive_link",
+      "dateModified": "2025-03-05T12:34:56",
+      "description": "HSSI metadata describing the software",
+      "encodingFormat": "application/json",
+      "license": "https://spdx.org/licenses/CC0-1.0.html",
+      "name": "HSSI metadata for the software"
+   },
+   {
+      "@type": "DataDownload",
+      "contentUrl": "https://github.com/sunpy/sunpy/blob/main/.zenodo.json",
+      "dateModified": "2025-03-05T12:34:56",
+      "encodingFormat": "application/json",
+      "license": "https://spdx.org/licenses/BSD-2-Clause",
+      "name": ".zenodo.json"
+   },
+   {
+      "@type": "DataDownload",
+      "contentUrl": "https://github.com/sunpy/sunpy/blob/main/CITATION.cff",
+      "dateModified": "2025-03-05T12:34:56",
+      "encodingFormat": "application/cff",
+      "license": "https://spdx.org/licenses/BSD-2-Clause",
+      "name": "CITATION.cff"
+   },
+   {
+      "@type": "DataDownload",
+      "contentUrl": "https://github.com/sunpy/sunpy/blob/main/codemeta.json",
+      "dateModified": "2025-03-05T12:34:56",
+      "encodingFormat": "application/json",
+      "license": "https://spdx.org/licenses/BSD-2-Clause",
+      "name": "codemeta.json"
+   }],
+   "supportingData": 
+    {
+    	"@id": "https://cdaweb.gsfc.nasa.gov/index.html",
+        "@type": "DataFeed",
+        "name": "CDAWeb",
+        "identifier": "https://cdaweb.gsfc.nasa.gov/index.html",
+        "url": "https://cdaweb.gsfc.nasa.gov/index.html"
+    },
+    "url": "https://doi.org/10.5281/zenodo.591887",
+	"usageInfo": [
+    {
+        "@id": "http://www.sunpy.org/",
+        "@type": "CreativeWork",
+        "description": "Documentation",
+        "url": "http://www.sunpy.org/"
+    },
+    {
+        "@id": "https://github.com/sunpy/sunpy/blob/main/README.rst",
+        "@type": "CreativeWork",
+        "name": "README.rst",
+        "url": "https://github.com/sunpy/sunpy/blob/main/README.rst"
+    }],    
+    "version": "v6.0.4"
+}
