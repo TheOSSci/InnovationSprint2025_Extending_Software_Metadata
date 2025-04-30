@@ -360,7 +360,12 @@
      	"name": "space weather"
      }     
      ],
-    "license": "https://spdx.org/licenses/BSD-2-Clause",
+    "license": {
+    	"@id": "https://spdx.org/licenses/BSD-2-Clause",
+        "@type": "CreativeWork",
+        "name": "BSD-2-Clause",
+        "url": "https://github.com/sunpy/sunpy/blob/main/LICENSE.rst"
+    },
     "maintainer": {"@id": "https://orcid.org/0000-0003-4217-4642"},
     "memoryRequirements": "unknown",
 	"mentions": [
